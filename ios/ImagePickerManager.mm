@@ -47,6 +47,7 @@ RCT_EXPORT_METHOD(launchCamera:(NSDictionary *)options callback:(RCTResponseSend
 RCT_EXPORT_METHOD(launchImageLibrary:(NSDictionary *)options callback:(RCTResponseSenderBlock)callback)
 {
     target = library;
+    NSLog(@"123");
     photoSelected = NO;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self launchImagePicker:options callback:callback];
